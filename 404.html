@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<html lang="en">
+	<meta name="description" content="AN PRODUCCIONES es una Agencia Integral de Publicidad tradicional y digital. Luego de 30 años en los medios, AN Producciones nace gracias a los amplios contactos y conocimientos adquiridos en este mundo y posteriormente en las redes sociales. AN producciones fue creada por Andrea Naftulewicz, productora Integral de medios, quien después de 20 años decidió abrir su espectro laboral sumando a su experiencia como productora de radio y televisión, LA VENTA PUBLICITARIA Y EL MARKETING DIGITAL.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="an producciones, agencia de medios, agencia de publicidad, marketing digital, publicidad en redes sociales, publicidad en via publica, publicidad con famosos">
+	<meta name="author" content="DiestroCorp | www.diestrocorp.com.ar | FB/IG/TW: @DiestroCorp">
+	<meta name="theme-color" content="#FF1493">
+	<link rel="manifest" href="manifest.json">
+	<script>
+		if('serviceWorker' in navigator){
+			navigator.serviceWorker.register('sw.js');
+		};
+	</script>	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel = "icon" href = "img/favicon.png" size = "16x16" type = "image/png">
+	<link rel="apple-touch-icon" href="img/icon.png">
+	<script src="control.js"></script>
+	<title>AN Producciones | Página no encontrada!</title>
+</head>
+<body id="body">
+<!------------TOPPER------------>
+	<div class="topper">
+		<p>DONDE QUIERAS ESTAR, AHÍ TE LLEVAMOS...</p>
+	</div>
+<!------------NAV------------>	
+	<nav id="menu">
+		<ul>
+			<li><a title="" href = "#menu">&#9776;</a></li>
+			<li><a title="" href = "#">x</a></li>
+			<li><a title="inicio" href = "#link1" id="nav-logo"><img src="img/logo-md.png" id="menu-img" alt="logo AN Producciones"></a></li>
+			<li><a title="inicio" href = "#link1">Inicio</a></li>
+			<li><a title="quienes somos" href = "#link2">Quiénes Somos</a></li>
+			<li><a title="servicios" href = "#link3">Servicios</a></li>
+			<li><a title="contacto" href = "#link4">Contacto</a></li>
+		</ul>
+	</nav>
+	<script type="text/javascript">
+	// When the user scrolls the page, execute myFunction
+	window.onscroll = function() {myFunction()};
+
+	// Get the navbar
+	var navbar = document.getElementById("menu");
+	var img = document.getElementById("menu-img");
+
+	// Get the offset position of the navbar
+	var sticky = navbar.offsetTop;
+
+	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+    		navbar.classList.add("sticky");
+    		img.classList.add("sticky-img");
+    } else {
+    		navbar.classList.remove("sticky");
+    		img.classList.remove("sticky-img");
+  	}
+	}
+	</script>
+<!------------HEADER------------>
+	<header class="parallax" id="link1">
+		<video autoplay muted loop id="myVideo">
+ 			<source src="img/video.mp4" type="video/mp4">
+		</video>
+		<div>
+			<h1>ERROR 404!</h1><br>
+			<h2>Página no encontrada.</h2><br>
+			<a href="index.html"><h4>>>VOLVER A INICIO<<</h4></a><br>
+			<button><a href="https://wa.me/5491149701776?text=Consulto%20desde%20la%20página%20web" title="WhatsApp" target="_blank">WHATSAPP</a></button><button><a href="#link3" id="boton-servicios" title="servicios">SERVICIOS</a></button>
+		</div>	
+	</header>
+<!------------FOOTER------------>	
+	<footer>
+		<div>
+			<h4 class="align-left">AN PRODUCCIONES</h4><br><hr>
+				<span class="container">
+					<span class="span-25"><img src="img/logo-sm.png"></span>
+					<span class="span-75"><p><em>AN Producciones es una agencia integral de medios de comunicación y publicidad con más de 30 años de experiencia</em></p></span>
+				</span>
+		</div>
+		<div>
+			<h4 class="align-left">CONTACTAR AL DESARROLLADOR:</h4><br><hr><br>
+			<p class="align-left"><a href="https://diestrocorp.com.ar" target="_blank">www.diestrocorp.com.ar</a><br>
+			<a href="mailto:info@diestrocorp.com.ar" target="_blank">info@diestrocorp.com.ar</a><br>
+			FB / IG / TW:<br>
+			@DiestroCorp<br></p>
+		</div>
+	</footer>
+	<!--------WHATSAPP-------->
+	<a href="https://wa.me/5491149701776?text=Consulto%20desde%20la%20página%20web" title="WhatsApp" target="_blank"><button class="float-button" id="Whatsapp"><span class="invisible">Whatsapp</span>
+		<img src ="img/whatsapp.png" alt="WhatsApp logo" loading="lazy">		
+	</button></a>	
+</body>
+</html>

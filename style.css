@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 300ms;
+}
+
+html{
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body{
+	display: grid;
+	grid-template-areas:
+		"topper"
+		"nav"
+		"header"
+		"about"
+		"titulo"		
+		"gallery"
+		"section"
+		"oportunidad"
+		"form"
+		"footer";
+	grid-template-rows: auto auto minmax(90vh, 90vh) auto auto auto auto minmax(60vh, 60vh) auto auto;	
+	min-height: 100%;
+	background-color: #e4e4e4;
+	font-family: Lato, sans-serif;
+}
+
+header, .about, .gallery, section, #oportunidad, form, footer{
+	padding: 1rem;
+}
+
+img:hover, button:hover{
+	opacity: 0.8;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.parallax{
+	width: 100;
+	height: auto;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.topper{
+	grid-area: topper;
+	background-color: deeppink;
+	color: white;
+	padding: 0.5rem;
+}
+
+.topper, .titulo{
+	text-align: center;
+	font-weight: bold;	
+}
+
+/*Responsive nav start*/
+nav{
+	grid-area: nav;
+	background-color: black;
+}	
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky-img{
+	width: 3rem;
+}
+
+nav a{
+	color: white;	
+	padding: 1rem;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+nav img{
+	width: 5rem;
+	height: auto;
+}
+
+nav li:first-of-type, nav li:nth-child(2){
+	display: none; 
+}
+
+nav li{
+	display: grid;
+	align-items: center;
+}
+
+nav a:not(#nav-logo):hover{
+	background-color: deeppink;
+	border-top: 2px solid white;
+}
+
+nav li:last-of-type:hover{
+	cursor: pointer;
+}
+/*Responsive nav end*/
+
+header{
+	grid-area: header;
+	text-align: center;
+	display: grid;
+	align-items: center;
+	text-align: left;
+	overflow: hidden;
+}
+
+header h1, header h2, header h4{
+	text-shadow: 3px 3px 8px black;
+}
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+header div{
+	margin-left: 5rem;
+}
+
+header h1{	
+	color: yellow;
+	font-size: 3.5rem;
+}
+
+header h2{
+	font-size: 2.5rem;
+}
+
+header h4{
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+header h2, header h4{
+	color: white;
+}
+
+header button, .about button, article button{
+	font-size: 1.2rem;
+	padding: 0.8rem;
+	background-color: transparent;
+	font-family: Lato, sans-serif;
+	font-weight: bold;
+	border: 2px solid;
+	border-radius: 5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+header button:first-of-type, .about button, article button{
+	border-color: deeppink;
+	color: deeppink;
+}
+
+header button:first-of-type{
+	margin-right: 1rem;
+}
+
+header button:nth-of-type(2){
+	border-color: yellow;
+	color: yellow;
+	margin-left: 1rem;
+}
+
+header button a:first-of-type{
+	color: deeppink;
+}
+
+#boton-servicios{
+	color: yellow;
+	font-weight: 400;
+}
+
+/*About start*/
+.about{
+	grid-area: about;
+	color: black;
+	background-color: #e4e4e4;
+}
+
+.about h1{
+	color: deeppink;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.about span{	
+	display: flex;
+	justify-content: space-between;
+}
+
+.about p{
+	font-size: 1.2rem;
+}
+
+.about div{
+	width: 50%;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+
+.about div:nth-of-type(2){
+	display: grid;
+	align-content: center;
+	text-align: left;
+}
+
+.about img:not(#about-span img){
+	width: 60%;
+	height: auto;
+}
+
+#span1{
+	width: 25%;
+	display: grid;
+	align-items: center;
+}
+
+#span2{
+	width: 75%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
+#about-span img{
+	width: 80%;
+}
+
+.black-border{
+	border-bottom: 2px solid yellow;
+	font-weight: bold;
+	padding: 0.5rem;
+}
+/*About end*/
+
+/*Titulo start*/
+.titulo{
+	grid-area: titulo;
+	font-size: 3rem;
+	padding: 1rem;
+}
+
+.titulo, section h2, #oportunidad h2{
+	color: indigo;	
+}
+/*Titulo end*/
+
+.titulo, .gallery{	
+	background-color: #ffe8ec;
+}
+
+/*Gallery start*/
+.gallery{
+	grid-area: gallery;	
+}
+
+.gallery hr{
+	display: none;
+}
+
+section:not(#oportunidad), .gallery, section div:nth-of-type(2){	
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+article{
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+}
+
+article div{
+	width: 50%;
+	padding: 1rem;
+}
+
+article	h1{
+	font-size: 2rem;
+}
+
+article p{
+	font-size: 1.2rem;
+}
+
+.align-left{
+	text-align: left;
+	align-self: left;
+}
+
+.align-right{
+	text-align: right;
+	align-self: right;
+}
+
+.align-center{
+	text-align: center;
+	align-self: center;
+}
+
+.pill-pink{
+	font-weight: bold;
+	color: white;
+	background-color: deeppink;
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+}
+
+article img{
+	width: 80%;
+	height: auto;
+	border-radius: 0.4rem;
+}
+/*Gallery end*/
+
+/*Section start*/
+section{
+	grid-area: section;
+}
+
+section h1{
+	font-size: 4rem;
+	color: deeppink;
+}
+
+#algunos-famosos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+#algunos-famosos-h1{
+	display: none;
+}	
+
+section span{
+	padding: 1rem;
+}
+
+section hr{
+	border: 2px solid deeppink;
+}
+
+section span:first-of-type{
+	width: 40%;
+}
+
+section span:nth-of-type(2){
+	width: 60%;
+	font-size: 1.1rem;
+}
+
+section img{
+	width: 100%;
+	height: auto;
+}
+
+section article{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+}
+
+section article span:first-of-type{
+	width: 40%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+section article span:nth-of-type(2){
+	width: 60%;
+}
+
+section button, #oportunidad button{
+	border-radius: 0rem;
+	font-family: Lato, sans-serif;
+	border: none;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+section button{
+	padding: 0.5rem;
+}
+
+article button{
+	border: 2px solid deeppink;
+}
+
+.article-third-2{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.article-third-2 img{
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.article-half-2 h2{
+	font-size: 1.5rem;
+}
+/*Section end*/
+
+/*Oportunidad start*/
+#oportunidad{
+	grid-area: oportunidad;
+	text-align: center;
+	background-color: #e18aa6;
+	color: white;
+	display: grid;
+	align-items: center;
+}
+
+#oportunidad div{
+	text-align: center;
+}
+
+#oportunidad h2{
+	font-size: 2rem;
+}
+
+#oportunidad button{
+	padding: 0.8rem;
+	background-image: linear-gradient(to right, darkorange, mediumvioletred);
+	border: 0;
+	color: white;
+}
+
+/*Oportunidad end*/
+
+/*Form start*/
+form{
+	grid-area: form;
+	text-align: center;
+}
+
+form h2{
+	padding: 1rem;
+}
+
+input, textarea{
+	padding: 1rem;
+	border: 1px solid gray;
+	font-family: Lato, sans-serif;
+}
+
+input:not(input[type="submit"]), textarea{
+	width: 60%;
+}	
+
+.g-recaptcha{
+	display: flex;
+	justify-content: center;
+}
+
+input{
+	border-radius: 5rem;
+}
+
+input:not(input[type="submit"]):focus; textarea:focus{
+	border: 2px solid deeppink;
+}
+
+textarea{
+	border-radius: 1rem;
+}
+
+input[type="submit"]{
+	background-color: deeppink;
+	color: white;
+	font-weight: 900;
+	border: none;
+	width: 20%;
+}
+
+input[type="submit"]:hover{
+	border: 2px solid deeppink;
+	background-color: transparent;
+	color: deeppink;
+	cursor: pointer;
+}
+/*Form end*/
+
+footer hr{
+	border: 2px solid pink;
+	width: 10%;
+}
+
+footer{
+	grid-area: footer;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+footer, .container, footer span{
+	display: flex;
+	justify-content: space-around;
+}
+
+footer a{
+	color: #e4e4e4;
+}
+
+footer a:hover{
+	opacity: 0.8;
+}
+
+footer h4{
+	font-size: 1.2rem;
+}
+
+footer p{
+	font-size: 1rem;
+}
+
+footer div{
+	width: 50%;
+}
+
+footer img:not(.social-links img){
+	width: 100%;
+	object-fit: contain;
+}
+
+.social-links img{
+	filter: invert(100);
+	width: 2rem;
+}
+
+footer span:not(.span-25){
+	padding: 1rem;
+}
+
+.span-25{
+	width: 25%;
+	box-sizing: border-box;
+	padding: none;
+}
+
+.span-75{
+	width: 75%;
+	display: grid;
+	align-content: center;
+	text-align: left;
+}
+
+.float-button{
+	position: fixed;
+	cursor: pointer;
+	z-index: 9999;
+	color: white;
+	bottom: 1rem;
+	right: 1rem;
+	transition: opacity 500ms;
+	width: 7%;
+	display: flex;
+	background-color: transparent;
+	border: none;
+	-webkit-filter: drop-shadow(1px 1px 10px #121213);
+	filter: drop-shadow(1px 1px 10px #121213);
+}
+
+.float-button:hover{
+	opacity: 0.8;
+}
+
+.float-button img{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+.float-button div{
+	float: right;
+	padding: 1rem;
+}
+
+.invisible{
+	display: none;
+}
+
+.mostrar-mobile{
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+	body{
+		grid-template-rows: auto auto minmax(90vh, 90vh) auto auto auto auto 1fr auto auto;
+	}
+
+	.mostrar-mobile{
+		display: block;
+	}
+
+	.ocultar-mobile{
+		display: none;
+	}
+
+	#myVideo {
+  		display: none;
+	}
+
+	header{
+		background-image: url(img/poster.png);
+		background-size: cover;
+	}
+
+	header h1{
+		font-size: 2.2rem;
+	}
+
+	header h2, header h4{
+		font-size: 1.3rem;
+	}
+
+	section div span h1{
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	header h2{
+		margin-bottom: 0.5rem;
+	}
+
+	header button:first-of-type, header button:nth-of-type(2){
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 1rem;
+	}
+
+	body, header div, section div span, #about-span, #span1, #span2, section, article, .article-half, footer div, .align-left, .align-right{
+		text-align: center;
+		margin: auto;	
+	}
+
+	nav ul, .about span, article, #algunos-famosos, section article, footer{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.about div, article div, section article, section article button, footer div, footer hr{
+		width: 100%;
+	}
+
+	.black-border, section article span, section article span:first-of-type, section article span:nth-of-type(2), .article-half{
+		width: 100%;
+	}
+
+	section article h2{
+		font-size: 1.5rem;
+	}
+
+	section span:nth-of-type(2), input, input[type="submit"], textarea{
+		width: 80%;
+	}	
+
+	article img{
+		width: 80%;
+		height: auto;
+	}
+
+	h1,h2,h3,h4,p{
+		font-size: 1rem;
+	}
+
+	.gallery hr{
+		display: block;
+		border: 2px solid deeppink;
+	}
+
+	#algunos-famosos-h{
+		display: none;
+	}
+
+	#algunos-famosos-h1{
+		display: block;
+	}
+
+	/*Acá comienza la magia*/
+	nav:not(:target) li:first-of-type{
+		display: inherit
+	}
+	
+	nav:not(:target) li{
+		display: none;
+	}
+	
+	nav:target li{
+		display: inherit;
+	}
+	
+	nav:target li:first-of-type{
+		display: none;
+	}
+	/*Acá termina la magia*/
+
+	.float-button{
+		width: 20%;
+	}		
+}

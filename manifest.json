@@ -1,0 +1,29 @@
+{
+	"short_name": "AN Producciones",
+	"name": "AN Producciones | Agencia Integral de Publicidad tradicional y digital",
+	"description": "AN PRODUCCIONES es una Agencia Integral de Publicidad tradicional y digital. Luego de 30 años en los medios, AN Producciones nace gracias a los amplios contactos y conocimientos adquiridos en este mundo y posteriormente en las redes sociales. AN producciones fue creada por Andrea Naftulewicz, productora Integral de medios, quien después de 20 años decidió abrir su espectro laboral sumando a su experiencia como productora de radio y televisión, LA VENTA PUBLICITARIA Y EL MARKETING DIGITAL.",
+	"icons": [
+		{
+			"src": "/img/favicon.png",
+			"type": "image/png",
+			"sizes": "16x16",
+			"purpose": "maskable any"
+		},
+		{
+			"src:": "/img/logo-sm.png",
+			"type": "image/png",
+			"sizes": "180x180",
+			"purpose": "maskable any"
+		},
+		{
+			"src": "/img/logo-lg.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable any"
+		}	
+	],
+	"start_url": "",
+	"background_color": "#FF1493",
+	"display": "fullscreen",
+	"theme_color": "#FF1493"
+}
